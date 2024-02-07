@@ -1,0 +1,26 @@
+#btm-aut {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #1A226B;
+    border-radius: 10px;
+    padding: 18px 63px;
+    border: none;
+    cursor: pointer;
+}
+#emailAutLabel{
+    display: block;
+    position: relative;
+    /* padding-left: 35px;
+    margin-bottom: 12px; */
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* font-size: 14px;
+    font-weight: 400;
+    line-height: 16px; */
+}

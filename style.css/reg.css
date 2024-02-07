@@ -1,0 +1,234 @@
+.fullScreen{
+    width: 100%;
+    height: 100vh;
+    background-color:#1B2473 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    color: #787878;
+}
+.form-aut{ 
+    width: 600px;
+    height: 412px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    padding: 26px 45px 30px 45px;
+    position: relative;
+    color: #787878;
+    /* display: none; */
+}
+.form-reg{
+    width: 600px;
+    height: 412px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    padding: 26px 45px 30px 45px;
+    position: relative;
+    color: #787878;
+    display: none;
+
+
+}
+.form-reg__headlines{
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: #787878;
+    text-align: center;
+    margin-bottom: 13px;
+
+
+}
+.form-reg__email-gr,
+.form-reg__password-gr{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    margin-bottom: 13px;
+    position: relative;
+}
+.form-reg__label{
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+.form-reg__input{
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 10px;
+    font-size: 28px;
+    line-height: 36px;
+    color: #CCCCCC;
+    padding: 7px 15px;
+}
+.form-reg__input::placeholder{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+.form-reg__star{
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.form-reg__label-checkbox{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.form-reg__checkbox-gr{
+    display: flex;
+    row-gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    position: relative
+
+}
+#checkboxAutStar,
+#checkboxRegStar{
+    color: #787878;
+    position: absolute;
+    top: 0;
+    left: -15;
+    width: 10px;
+    height: 10px;
+    font-size: 16;
+    border: #CCCCCC;
+}
+
+#checkboxRegLabel{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+#checkboxReg,
+#checkboxAut{
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 7px;
+}
+#checkboxReg:checked~.checkmark{
+    background: transparent;
+}
+
+#checkboxmark:after{
+    content: "\2713";
+    position: absolute;
+    top: 0px;
+    right:  -30px;
+}
+#checkboxReg:checked~.checkmark:after{
+    display: block;
+}
+
+
+#checkboxRegLabel.checkmark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #787878;
+    border-width: 0 3px 3px 0;
+    
+}
+.checkboxReg{
+    border: 2px solid #787878;
+    border-radius: 7px;
+    width: 24px;
+    height: 24px
+
+}
+
+.form-reg__btm{
+    display: flex;
+    margin-top: 54px;
+    justify-content: center;
+    
+    
+
+}
+.form-reg__btm input{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #1A226B;
+    border-radius: 10px;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+}
+#btm-reg {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #1A226B;
+    border-radius: 10px;
+    padding: 18px 63px;
+    border: none;
+    cursor: pointer;
+}
+.emailReg{
+    border-color: #CB2424;
+}
+#autEmailText,
+#autCheckboxText,
+#autPasswordText,
+#regEmailText,
+#regCheckboxText,
+#regPasswordText{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    
+    }
+#regCheckboxText,
+#autCheckboxText
+    {
+    position: absolute;
+    top: 30px;
+    
+}
+
+.form-reg__btm-toggle,
+.form-aut__btm-toggle{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1A226B;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/style.css/aut.css">
+    <link rel="stylesheet" href="/style.css/reg.css">
+    <title>Промежуточная-2 </title>
+    <!-- <link rel="stylesheet" href="/style.css/registration.css"> -->
+    <link rel="stylesheet" href="/style.css/reset.css">
+    
+</head>
+<body>
+    <div class="fullScreen">
+        <!-- Регистрация -->
+        <form class="form-reg">
+            <h1 class="form-reg__headlines">Регистрация</h1>
+
+            <button id="toggle-btm-reg" type="button" class="form-reg__btm-toggle">Авторизироваться</button>   
+
+            <div class="form-reg__email-gr">
+                <label class="form-reg__label" for="emailReg" id="emailRegLabel">Email</label>
+                <input class="form-reg__input" type="text" class="emailReg" placeholder="Введите email" autocomplete="off" name="emailReg" id="emailReg" >
+                <span class="form-reg__star" id="emailRegStar">*</span>
+                <span id="regEmailText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__password-gr">
+                <label class="form-reg__label" for="pswReg" id="pswRegLabel">Пароль</label>
+                <input class="form-reg__input" type="password" class="pswReg" placeholder="Введите пароль" autocomplete="off" name="pswReg" id="pswReg">
+                <span class="form-reg__star" id="pswRegStar">*</span>
+                <span id="regPasswordText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__checkbox-gr">
+                <label class="form-reg__label-checkbox" for="checkboxReg" id="checkboxRegLabel"></label>
+                    <input  type="checkbox" name="checkboxReg" id="checkboxReg"> Я согласен получать обновления на почту    
+                    <span class="checkmark"></span>
+                    <span class="form-reg__star" id="checkboxRegStar">*</span>
+                    <span id="regCheckboxText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__btm">
+            <!-- <input tabindex="submit" value="Регистрация"> -->
+            <button id="btm-reg" type="submit" value="">Регистрация</button>
+            </div>
+    </form>
+    
+    <!-- авторизация -->
+        <form class="form-aut">
+            <h1 class="form-reg__headlines">Вход</h1>
+            <button id="toggle-btn-aut" type="button" class="form-aut__btm-toggle">Зарегистрироваться</button>   
+            <div class="form-reg__email-gr">
+                <label class="form-reg__label" for="emailReg" id="emailAutLabel">Email</label>
+                <input class="form-reg__input" type="text" class="emailReg" placeholder="Введите email" autocomplete="off" name="emailReg" id="emailAut" >
+                <span class="form-reg__star" id="emailAutStar">*</span>
+                <span id="autEmailText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__password-gr">
+                <label class="form-reg__label" for="pswReg" id="pswAutLabel">Пароль</label>
+                <input class="form-reg__input" type="password" class="pswReg" placeholder="Введите пароль" autocomplete="off" name="pswReg" id="pswAut">
+                <span class="form-reg__star" id="pswAutStar">*</span>
+                <span id="autPasswordText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__checkbox-gr">
+                <label class="form-reg__label-checkbox" for="checkboxReg" id="checkboxRegLabel"></label>
+                    <input  type="checkbox" name="checkboxReg" id="checkboxAut"> Я согласен получать обновления на почту    
+                    <span class="checkmark"></span>
+                    <span class="form-reg__star" id="checkboxAutStar">*</span>
+                    <span id="autCheckboxText">Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form-reg__btm">
+            <!-- <input tabindex="submit" value="Регистрация"> -->
+            <button id="btm-aut" type="submit" value="">Вход</button>
+        </div>
+        </form>
+    </div>
+    <script src="js/sc.js"></script>
+</body>
+</html>
